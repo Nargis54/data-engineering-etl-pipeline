@@ -64,6 +64,8 @@ data-engineering-etl-pipeline/
 ├── .gitignore
 ├── README.md
 └── LICENSE
+```
+
 ## Output
 
 The ETL pipeline generates processed employee and order datasets in the `data/processed` folder.

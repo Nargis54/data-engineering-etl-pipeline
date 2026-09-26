@@ -4,7 +4,7 @@
 
 This project implements an ETL pipeline using Python, Pandas, SQL and PySpark.
 
-The pipeline extracts employee and order data, cleans and transforms the data, and loads the processed datasets for further analysis.
+The pipeline extracts employee and order data, cleans and transforms the data, and loads processed datasets for analysis.
 
 ## Technologies
 
@@ -19,16 +19,20 @@ The pipeline extracts employee and order data, cleans and transforms the data, a
 Extract → Transform → Load
 
 ### Extract
+
 Employee and order data are extracted from CSV files using Python and Pandas.
 
 ### Transform
-Data is cleaned by removing duplicates, trimming text values, converting data types, and creating an average unit price.
+
+Data is cleaned, duplicates are removed, data types are converted, and average unit price is calculated.
 
 ### Load
+
 The transformed data is saved as processed CSV files.
 
 ### PySpark Processing
-PySpark is used to process order data and generate product-wise sales and order-count summaries.
+
+PySpark is used to calculate product-wise total sales and order count.
 
 ## Dataset
 
@@ -41,7 +45,11 @@ PySpark is used to process order data and generate product-wise sales and order-
 data-engineering-etl-pipeline/
 ├── data/
 │   ├── raw/
+│   │   ├── employees.csv
+│   │   └── orders.csv
 │   └── processed/
+│       ├── employees_processed.csv
+│       └── orders_processed.csv
 ├── src/
 │   ├── extract.py
 │   ├── transform.py

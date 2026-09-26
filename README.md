@@ -64,3 +64,19 @@ data-engineering-etl-pipeline/
 ├── .gitignore
 ├── README.md
 └── LICENSE
+## Output
+
+The ETL pipeline generates processed employee and order datasets in the `data/processed` folder.
+
+The processed order data includes the calculated `Average_Unit_Price` field.
+
+## SQL Analysis
+
+SQL queries are included to analyze employee salary data and product-wise sales.
+
+- Department-wise average salary
+- Product-wise total sales
+
+## Project Status
+
+The ETL pipeline has been successfully executed using Python, Pandas and PySpark.
